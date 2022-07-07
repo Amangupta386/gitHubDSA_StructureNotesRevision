@@ -1,5 +1,6 @@
 // link of 1st type
 //https://practice.geeksforgeeks.org/problems/reverse-an-array/0#
+//two Pointer approach
 #include <iostream>
 using namespace std;
 
