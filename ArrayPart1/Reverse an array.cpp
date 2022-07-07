@@ -1,6 +1,6 @@
 // link of 1st type
 //https://practice.geeksforgeeks.org/problems/reverse-an-array/0#
-//two Pointer approach
+
 #include <iostream>
 using namespace std;
 
@@ -22,6 +22,7 @@ while(t--){
 }
 
 //link Of 2nd type question
+//two Pointer approach
 //https://www.codingninjas.com/codestudio/problems/reverse-the-array_1262298
 void reverseArray(vector<int> &arr , int m)
 {
