@@ -27,3 +27,36 @@ bool checkPalindrome(string s)
     return true;
     
 }
+// Babbar Approach
+#include<bits/stdc++.h>
+using namespace std;
+bool checkPalindrome(string s);
+int main(){
+	string s = "Noons";
+	bool a = checkPalindrome(s);
+	cout<<a;
+}
+char toLowerCase(char ch){
+    if(ch >= 'a' && ch <= 'z')
+        return ch;
+    else{
+        char temp = ch - 'A' + 'a';
+        return temp;
+    }
+}
+
+bool checkPalindrome(string s){
+     int s1 = 0;
+     int n = s.size(); 
+     int e = n-1;
+     while( s1<=e ){
+         if( toLowerCase(s[s1]) != toLowerCase(s[e]) ){
+             return 0;
+          }
+          else{
+              s1++;
+              e--;
+          }
+     }
+    return 1;
+}
