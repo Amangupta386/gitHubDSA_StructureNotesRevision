@@ -37,13 +37,14 @@ int main(){
 	cout<<a;
 }
 char toLowerCase(char ch){
-    if(ch >= 'a' && ch <= 'z')
+    if(ch>='a' && ch<='z' || (ch>=0 && ch<=9 ))
         return ch;
     else{
-        char temp = ch - 'A' + 'a';
-        return temp;
+        ch=ch-'A'+'a';
+        return ch;
     }
 }
+
 
 bool checkPalindrome(string s){
      int s1 = 0;
